@@ -51,9 +51,7 @@
 
                        <div class="from-group">
                            <label for="description">Описание</label>
-                           <textarea name="description" id="description" class="form-control" rows="10">
-                               {{$item->description}}
-                           </textarea>
+                           <textarea name="description" id="description" class="form-control" rows="10">{{old('description',$item->description)}}</textarea>
 
                        </div>
                     </div>
