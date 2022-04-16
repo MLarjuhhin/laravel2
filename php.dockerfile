@@ -1,4 +1,4 @@
-ENTRYPOINT FROM php:8.0.2-fpm-alpine
+FROM php:8.0.2-fpm-alpine
 WORKDIR /var/www/html
 RUN apk add --no-cache --virtual .build-deps \
     $PHPIZE_DEPS \
@@ -42,4 +42,3 @@ RUN apk add --no-cache --virtual .build-deps \
     gd \
     && curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer \
     && apk del -f .build-deps
-RUN chmod 777 -R /var/www/html/storage
