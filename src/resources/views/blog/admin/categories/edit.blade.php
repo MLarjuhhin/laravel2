@@ -4,9 +4,12 @@
     @php
     /** @var \App\Models\BlogCategory $item */
     @endphp
-
-    <form method="POST" action="{{route('blog.admin.categoies.update',$item->id)}}">
+@if($item->exists)
+        <form method="POST" action="{{route('blog.admin.categoies.update',$item->id)}}">
         @method('PATCH')
+@else
+        <form method="POST" action="{{route('blog.admin.categoies.store')}}">
+@endif
         @csrf
         <div class="container">
             @php
@@ -23,12 +26,12 @@
                 </div>
             @endif
 
-            @if(session('success'))
+            @if(session('msg'))
                 <div class="row justify-content-center">
                     <div class="col-md-11">
                         <div class="alert alert-success" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            {{session()->get('success')}}
+                            {{session()->get('msg')}}
                         </div>
                     </div>
                 </div>
