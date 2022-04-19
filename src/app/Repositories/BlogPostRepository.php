@@ -6,9 +6,10 @@ use App\Models\BlogPost as Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 /**
- *  Class BlogCategoryRepository
+ * Class BlogPostRepository
  *
  * @package App\Repositories
+ * @method Model startConditions()
  */
 class BlogPostRepository extends CoreRepository
 {
