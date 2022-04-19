@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1cd9f3-8126-432a-bc8b-ea8e161c7ed3" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/app/Repositories/BlogPostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/blog/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/blog/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/blog/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -151,6 +157,7 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/src/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/src/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="27rujrgmqoQyGzf9HWlqMqXNqEe" />
@@ -174,6 +181,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\maksim\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9a1cd9f3-8126-432a-bc8b-ea8e161c7ed3" name="Changes" comment="" />
@@ -183,6 +193,7 @@
       <updated>1650090663471</updated>
       <workItem from="1650090664506" duration="518000" />
       <workItem from="1650092229833" duration="36559000" />
+      <workItem from="1650353841695" duration="4672000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1650115975180</created>
@@ -235,9 +246,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/app/Http/Controllers/Blog/Admin/PostController.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

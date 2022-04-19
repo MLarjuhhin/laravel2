@@ -9,4 +9,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BlogPost extends Model
 {
     use HasFactory,SoftDeletes;
+
+//    protected $date=[
+//        'published_at',
+//    ];
 }

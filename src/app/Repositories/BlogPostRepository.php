@@ -13,13 +13,30 @@ use Illuminate\Support\Collection;
 class BlogPostRepository extends CoreRepository
 {
     /**
-     *  получить модель для редактирвание в админ
+     *  ырнуть все статьи
      *
-     * @param int $id
      *
-     * @retrun Model
+     * @retrun LenghtAwarePaginator
      */
+    public function getAllWithPaginator(){
+        $perPage=25;
+        $col=[
+            'id',
+            'title',
+            'slug',
+            'is_published',
+            'published_at',
+            'user_id',
+            'category_id',
+        ];
 
+        $result=$this->startConditions()
+            ->select($col)
+            ->orderBy('id','DESC')
+            ->paginate($perPage);
+
+        return $result;
+    }
 
     /**
      *

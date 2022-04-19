@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <excludeFolder url="file://$MODULE_DIR$/src/bootstrap/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/src/storage" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/barryvdh/laravel-debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/barryvdh/laravel-ide-helper" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/barryvdh/reflection-docblock" />
@@ -37,6 +39,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/sanctum" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/serializable-closure" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/config" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/flysystem" />
@@ -127,8 +130,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/webmozart/assert" />
-      <excludeFolder url="file://$MODULE_DIR$/src/bootstrap/cache" />
-      <excludeFolder url="file://$MODULE_DIR$/src/storage" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
