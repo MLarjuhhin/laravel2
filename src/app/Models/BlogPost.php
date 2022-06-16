@@ -51,4 +51,14 @@ class BlogPost extends Model
 //    protected $date=[
 //        'published_at',
 //    ];
+    
+    
+    public function category(){
+        
+        return $this->belongsTo(BlogCategory::class);
+    }
+    public function user(){
+        
+        return $this->belongsTo(User::class);
+    }
 }

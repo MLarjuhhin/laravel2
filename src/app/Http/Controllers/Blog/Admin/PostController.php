@@ -9,11 +9,17 @@ use App\Repositories\BlogPostRepository;
 class PostController extends BaseController
 {
     private $blogPostrepository;
-
+    
+    /**
+     * @var BlogPostRepository
+     */
+    private $blogCategoryRepository;
+    
     public function __construct()
     {
         parent::__construct();
         $this->blogPostrepository=app(BlogPostRepository::class);
+        $this->blogCategoryRepository=app(BlogPostRepository::class);
     }
 
     /**
@@ -63,11 +69,19 @@ class PostController extends BaseController
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
+     *
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        dd(__METHOD__,$id);
+        $item=$this->blogCategoryRepository->getEdit($id);
+        if (empty($item)){
+            abort(404);
+        }
+        
+        $catecoryList=$this->blogCategoryRepository->getForComboBox();
+        
+        return view('blog.admin.posts.edit',compact('item','catecoryList'));
     }
 
     /**

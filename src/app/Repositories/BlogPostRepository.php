@@ -20,22 +20,30 @@ class BlogPostRepository extends CoreRepository
      * @retrun LenghtAwarePaginator
      */
     public function getAllWithPaginator(){
-        $perPage=25;
-        $col=[
-            'id',
+    
+        $perPage = 25;
+        $col     = ['id',
             'title',
             'slug',
             'is_published',
             'published_at',
             'user_id',
-            'category_id',
-        ];
-
-        $result=$this->startConditions()
+            'category_id',];
+    
+        $result = $this->startConditions()
             ->select($col)
-            ->orderBy('id','DESC')
+            ->orderBy('id', 'DESC')
+            //v1
+            //->with(['category','user'])
+            //v2
+            ->with(['category' => function ($q) {
+            
+                $q->select(['id',
+                    'title']);
+            },
+                'user:id,name',])
             ->paginate($perPage);
-
+    
         return $result;
     }
 
@@ -46,5 +54,10 @@ class BlogPostRepository extends CoreRepository
     protected function getModelClass()
     {
         return Model::class;
+    }
+    
+    
+    public function getEdit($id){
+        return $this->startConditions()->find($id);
     }
 }
