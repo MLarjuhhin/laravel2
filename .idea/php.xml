@@ -121,6 +121,8 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/src/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/src/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/telescope" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
