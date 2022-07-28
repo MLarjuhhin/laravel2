@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Blog\PostController;
+
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +45,12 @@ Route::group($groupData,function() {
     Route::resource('categories',CategoryConroller::class)
         ->only($methods)
         ->names('blog.admin.categories');
+    
+    
+    //posts
+    Route::resource('posts',BlogAdminPostController::class)
+        ->except(['show'])//vse krome show
+        ->names('blog.admin.posts');
 
 });
 
